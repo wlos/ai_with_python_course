@@ -1,4 +1,4 @@
-# AI with Python course
+# Introduction to AI with Python
 
 This repository contains the notebook-based learning materials for the AI with
 Python course and publishes them as a website with Quarto and GitHub Pages.

@@ -8,7 +8,7 @@ page-layout: full
 TAFE COURSE MATERIALS
 :::
 
-# AI with Python
+# Introduction to AI with Python
 
 Build practical Python foundations and progress towards artificial intelligence through guided, notebook-based sessions.
 
