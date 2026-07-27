@@ -1,5 +1,4 @@
 ---
-title: false
 page-layout: full
 ---
 

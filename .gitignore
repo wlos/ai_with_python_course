@@ -3,3 +3,5 @@
 __pycache__/
 /.quarto/
 /_site/
+
+**/*.quarto_ipynb
