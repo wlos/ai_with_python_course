@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "*.ipynb"
+
+website:
+  title: "AI with Python"
+  site-url: "https://wlos.github.io/ai_with_python_course/"
+  repo-url: "https://github.com/wlos/ai_with_python_course"
+  repo-actions:
+    - source
+  navbar:
+    background: primary
+    left:
+      - text: "Home"
+        href: index.qmd
+  sidebar:
+    style: floating
+    search: true
+    contents:
+      - index.qmd
+      - section: "Course Sessions"
+        contents: "*.ipynb"
+  page-footer:
+    left: "AI with Python course materials"
+    right:
+      - icon: github
+        href: "https://github.com/wlos/ai_with_python_course"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+    smooth-scroll: true
