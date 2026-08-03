@@ -58,21 +58,46 @@ body {
   background: transparent;
 }
 
-.quarto-grid-item {
-  border-color: var(--course-border);
-  border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: none;
+.session-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 1.25rem;
+  margin: 1.25rem 0 3rem;
 }
 
-.quarto-grid-item:hover {
+.session-card {
+  padding: 1.5rem;
+  background: var(--course-surface);
+  border: 1px solid var(--course-border);
+  border-radius: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.session-card:hover {
   border-color: var(--course-blue);
   box-shadow: 0 0.75rem 1.75rem rgba(36, 87, 214, 0.12);
   transform: translateY(-2px);
 }
 
-.quarto-grid-item .card-title {
+.session-card h3 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  line-height: 1.35;
+}
+
+.session-card h3 a {
   color: var(--course-blue);
+  text-decoration: none;
+}
+
+.session-card h3 a:hover {
+  color: var(--course-blue-dark);
+  text-decoration: underline;
+}
+
+.session-card p {
+  margin-bottom: 0;
+  color: var(--course-muted);
 }
 
 @media (max-width: 575px) {

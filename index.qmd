@@ -1,15 +1,5 @@
 ---
 page-layout: full
-listing:
-  id: course-sessions
-  contents: "Session*.ipynb"
-  type: grid
-  grid-columns: 3
-  sort: "title asc"
-  fields:
-    - title
-  filter-ui: false
-  sort-ui: false
 ---
 
 ::: {.course-hero}
@@ -24,18 +14,24 @@ Build practical Python foundations and progress towards artificial intelligence 
 [Browse course sessions](#course-sessions){.btn .btn-primary .btn-lg}
 :::
 
-## Course sessions {#course-sessions}
+## Course Sessions {#course-sessions}
 
-All available sessions are listed below. This list updates automatically whenever a new `Session*.ipynb` notebook is added.
+::: {.session-grid}
+::: {.session-card}
+### [Session 2: Python Foundations and Algebra](<Session2 Python Foundations and Algebra.ipynb>)
 
-::: {#listing-course-sessions}
+Learn how Python stores and processes data through variables, common data types, binary and hexadecimal number systems, arithmetic operators, and operator precedence.
 :::
 
-## How to use these materials
+::: {.session-card}
+### [Session 3: Selection and Boolean Logic](<Session3 Selection and Boolean Logic.ipynb>)
 
-1. Open a session from the navigation menu.
-2. Read the explanations and code examples in order.
-3. Run the notebook locally when you want to practise or change the code.
-4. Complete the exercises before checking the worked solutions.
+Use Boolean values, comparisons, `if`/`elif`/`else` selection, logical and bitwise operators, Boolean formulas, and truth tables to express decision-making rules.
+:::
 
-New sessions will appear here and in the navigation after they are added to the repository and the site is published again.
+::: {.session-card}
+### [Session 4: Iteration, Program Libraries and Functions](<Session4 Iteration, Program Libraries and Functions.ipynb>)
+
+Build repeated algorithms with `while` and `for` loops, use common loop patterns and Python libraries, and create reusable functions with parameters, arguments, and return values.
+:::
+:::
