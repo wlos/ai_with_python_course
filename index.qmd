@@ -1,5 +1,15 @@
 ---
 page-layout: full
+listing:
+  id: course-sessions
+  contents: "Session*.ipynb"
+  type: grid
+  grid-columns: 3
+  sort: "title asc"
+  fields:
+    - title
+  filter-ui: false
+  sort-ui: false
 ---
 
 ::: {.course-hero}
@@ -11,21 +21,14 @@ TAFE COURSE MATERIALS
 
 Build practical Python foundations and progress towards artificial intelligence through guided, notebook-based sessions.
 
-[Start Session 2](<Session2 Python Foundations and Algebra.ipynb>){.btn .btn-primary .btn-lg}
+[Browse course sessions](#course-sessions){.btn .btn-primary .btn-lg}
 :::
 
-## Course sessions
+## Course sessions {#course-sessions}
 
-::: {.session-grid}
-::: {.session-card}
-### Session 2
+All available sessions are listed below. This list updates automatically whenever a new `Session*.ipynb` notebook is added.
 
-#### Python Foundations and Algebra
-
-Learn about variables, Python data types, number systems, arithmetic operators, precedence rules, and guided exercises.
-
-[Open this session →](<Session2 Python Foundations and Algebra.ipynb>)
-:::
+::: {#listing-course-sessions}
 :::
 
 ## How to use these materials
@@ -35,4 +38,4 @@ Learn about variables, Python data types, number systems, arithmetic operators, 
 3. Run the notebook locally when you want to practise or change the code.
 4. Complete the exercises before checking the worked solutions.
 
-New sessions will appear in the navigation after they are added to the repository and the site is published again.
+New sessions will appear here and in the navigation after they are added to the repository and the site is published again.

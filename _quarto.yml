@@ -3,7 +3,7 @@ project:
   output-dir: _site
   render:
     - "*.qmd"
-    - "*.ipynb"
+    - "Session*.ipynb"
 
 website:
   title: "Introduction to AI with Python"
@@ -22,7 +22,7 @@ website:
     contents:
       - index.qmd
       - section: "Course Sessions"
-        contents: "*.ipynb"
+        contents: "Session*.ipynb"
   page-footer:
     left: "Introduction to AI with Python course materials"
     right:

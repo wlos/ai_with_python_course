@@ -58,36 +58,21 @@ body {
   background: transparent;
 }
 
-.session-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  gap: 1.25rem;
-  margin: 1.25rem 0 3rem;
-}
-
-.session-card {
-  padding: 1.5rem;
-  background: var(--course-surface);
-  border: 1px solid var(--course-border);
+.quarto-grid-item {
+  border-color: var(--course-border);
   border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: none;
 }
 
-.session-card h3 {
-  margin-top: 0;
+.quarto-grid-item:hover {
+  border-color: var(--course-blue);
+  box-shadow: 0 0.75rem 1.75rem rgba(36, 87, 214, 0.12);
+  transform: translateY(-2px);
+}
+
+.quarto-grid-item .card-title {
   color: var(--course-blue);
-  font-size: 0.85rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.session-card h4 {
-  margin-top: 0.5rem;
-  font-size: 1.35rem;
-}
-
-.session-card p {
-  color: var(--course-muted);
 }
 
 @media (max-width: 575px) {
