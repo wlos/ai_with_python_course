@@ -34,4 +34,10 @@ Use Boolean values, comparisons, `if`/`elif`/`else` selection, logical and bitwi
 
 Build repeated algorithms with `while` and `for` loops, use common loop patterns and Python libraries, and create reusable functions with parameters, arguments, and return values.
 :::
+
+::: {.session-card}
+### [Session 5-6: Function Design and Algorithm Design](<Session5-6 Function Design and Algorithm Design.ipynb>)
+
+Design well-documented functions with default parameters, docstrings, and type hints; apply searching and sorting algorithms using Python built-in tools; and build modular programs — with hands-on micro:bit experiments throughout.
+:::
 :::

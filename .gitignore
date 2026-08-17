@@ -1,7 +1,17 @@
 .DS_Store
+**/.DS_Store
 .ipynb_checkpoints/
+.jupyter_cache/
 __pycache__/
+.venv/
 /.quarto/
 /_site/
 
 **/*.quarto_ipynb
+
+# Visible local directory for temporary files created during development
+archive/
+
+# Local Codex project instructions and sandbox settings
+AGENTS.md
+.codex/
