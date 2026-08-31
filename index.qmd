@@ -46,4 +46,10 @@ Design well-documented functions with default parameters, docstrings, and type h
 
 Process and format strings, compare Python's core data structures, convert and combine collections, and choose suitable lists, tuples, sets, and dictionaries for practical programming tasks.
 :::
+
+::: {.session-card}
+### [Session 9: Programming for Maqueen Robot](<Session9 Programming for Maqueen Robot.ipynb>)
+
+Control the DFRobot Micro:Maqueen mobile robot using MicroPython, including indicator and NeoPixel RGB LEDs, DC motor drive control, ultrasonic obstacle sensing, and infrared line-following algorithms.
+:::
 :::
