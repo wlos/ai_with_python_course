@@ -40,4 +40,10 @@ Build repeated algorithms with `while` and `for` loops, use common loop patterns
 
 Design well-documented functions with default parameters, docstrings, and type hints; apply searching and sorting algorithms using Python built-in tools; and build modular programs — with hands-on micro:bit experiments throughout.
 :::
+
+::: {.session-card}
+### [Session 7–8: Strings and Data Structures](<Session7-8 Strings and Data Structures.ipynb>)
+
+Process and format strings, compare Python's core data structures, convert and combine collections, and choose suitable lists, tuples, sets, and dictionaries for practical programming tasks.
+:::
 :::
