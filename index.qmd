@@ -52,4 +52,10 @@ Process and format strings, compare Python's core data structures, convert and c
 
 Control the DFRobot Micro:Maqueen mobile robot using MicroPython, including indicator and NeoPixel RGB LEDs, DC motor drive control, ultrasonic obstacle sensing, and infrared line-following algorithms.
 :::
+
+::: {.session-card}
+### [Session 11: Introduction to AI](<Session11 Introduction to AI.ipynb>)
+
+Explore the relationship between AI, machine learning and deep learning, key historical milestones, supervised and unsupervised learning, regression, classification, clustering, and the data needed for machine learning.
+:::
 :::

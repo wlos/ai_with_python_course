@@ -22,7 +22,14 @@ website:
     contents:
       - index.qmd
       - section: "Course Sessions"
-        contents: "Session*.ipynb"
+        contents:
+          - "Session2 Python Foundations and Algebra.ipynb"
+          - "Session3 Selection and Boolean Logic.ipynb"
+          - "Session4 Iteration, Program Libraries and Functions.ipynb"
+          - "Session5-6 Function Design and Algorithm Design.ipynb"
+          - "Session7-8 Strings and Data Structures.ipynb"
+          - "Session9 Programming for Maqueen Robot.ipynb"
+          - "Session11 Introduction to AI.ipynb"
   page-footer:
     left: "Introduction to AI with Python course materials"
     right:

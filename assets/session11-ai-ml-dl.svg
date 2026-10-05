@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="570" viewBox="0 0 1000 570" role="img" aria-labelledby="title desc">
+<title id="title">AI, ML and DL relationship</title>
+<desc id="desc">Artificial intelligence contains machine learning, which contains deep learning. Rules and search can be AI without learning; linear models and decision trees can be ML without deep learning.</desc>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#172033}.label{font-size:28px;font-weight:700}.note{font-size:20px}</style>
+<rect width="1000" height="570" rx="20" fill="#f4f7ff"/>
+<rect x="30" y="30" width="940" height="510" rx="22" fill="#dfebff" stroke="#2457d6" stroke-width="3"/>
+<text x="60" y="80" class="label">Artificial intelligence (AI)</text>
+<text x="60" y="115" class="note">Intelligent tasks: reasoning, planning, perception and action</text>
+<text x="60" y="165" class="note">Rules and search</text>
+<rect x="160" y="200" width="770" height="305" rx="20" fill="#e1f3e7" stroke="#357250" stroke-width="3"/>
+<text x="190" y="250" class="label">Machine learning (ML)</text>
+<text x="190" y="285" class="note">Learn patterns from data: linear models, trees and other methods</text>
+<rect x="330" y="330" width="555" height="135" rx="18" fill="#fff0d7" stroke="#aa6c18" stroke-width="3"/>
+<text x="360" y="380" class="label">Deep learning (DL)</text>
+<text x="360" y="420" class="note">Neural networks with multiple learnt layers</text>
+</svg>

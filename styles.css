@@ -11,6 +11,24 @@ body {
   color: var(--course-ink);
 }
 
+/* Allow content columns to shrink and wide tables to scroll. */
+#quarto-content > *,
+main.content,
+.cell,
+.cell-output,
+.cell-output-display {
+  min-width: 0;
+  max-width: 100%;
+}
+
+main.content table,
+.cell-output-display table {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
 .course-hero {
   margin: 1.5rem 0 3rem;
   padding: clamp(2rem, 6vw, 5rem);
