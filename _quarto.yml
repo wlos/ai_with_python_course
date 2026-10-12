@@ -30,6 +30,9 @@ website:
           - "Session7-8 Strings and Data Structures.ipynb"
           - "Session9 Programming for Maqueen Robot.ipynb"
           - "Session11 Introduction to AI.ipynb"
+          - "Session12 Data for Machine Learning.ipynb"
+          - "Session13-14 Machine Learning Essentials.ipynb"
+          - "Session15 Machine Learning Evaluation.ipynb"
   page-footer:
     left: "Introduction to AI with Python course materials"
     right:

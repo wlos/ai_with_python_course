@@ -58,4 +58,16 @@ Control the DFRobot Micro:Maqueen mobile robot using MicroPython, including indi
 
 Explore the relationship between AI, machine learning and deep learning, key historical milestones, supervised and unsupervised learning, regression, classification, clustering, and the data needed for machine learning.
 :::
+
+::: {.session-card}
+### [Session 13–14: Machine Learning Essentials](<Session13-14 Machine Learning Essentials.ipynb>)
+
+Use scikit-learn for temperature and California housing regression, MNIST digit classification, Iris clustering, and product recommendations based on customer clusters.
+:::
+
+::: {.session-card}
+### [Session 15: Machine Learning Evaluation](<Session15 Machine Learning Evaluation.ipynb>)
+
+Compare classification, regression and clustering metrics, diagnose underfitting and overfitting, and use cross-validation with a reserved final test set.
+:::
 :::
