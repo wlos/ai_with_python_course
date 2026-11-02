@@ -70,4 +70,10 @@ Use scikit-learn for temperature and California housing regression, MNIST digit 
 
 Compare classification, regression and clustering metrics, diagnose underfitting and overfitting, and use cross-validation with a reserved final test set.
 :::
+
+::: {.session-card}
+### [Session 16: Introduction to Deep Learning and Image Processing 1](<Session16 Introduction to Deep Learning and Image Processing 1.ipynb>)
+
+Explore deep learning fundamentals, CNN operations and architectures, apply image filters, and train and compare fully connected and convolutional MNIST classifiers.
+:::
 :::
