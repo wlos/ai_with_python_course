@@ -4,6 +4,8 @@ project:
   render:
     - "*.qmd"
     - "Session*.ipynb"
+  resources:
+    - "Session16.1 MNIST Image Classification Practice.ipynb"
 
 website:
   title: "Introduction to AI with Python"
@@ -34,6 +36,7 @@ website:
           - "Session13-14 Machine Learning Essentials.ipynb"
           - "Session15 Machine Learning Evaluation.ipynb"
           - "Session16 Introduction to Deep Learning and Image Processing 1.ipynb"
+          - "Session16.1 MNIST Image Classification Practice.ipynb"
   page-footer:
     left: "Introduction to AI with Python course materials"
     right:
