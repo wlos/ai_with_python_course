@@ -72,7 +72,7 @@ Compare classification, regression and clustering metrics, diagnose underfitting
 :::
 
 ::: {.session-card}
-### [Session 16: Introduction to Deep Learning and Image Processing 1](<Session16 Introduction to Deep Learning and Image Processing 1.ipynb>)
+### [Session 16: Introduction to Deep Learning and Image Processing](<Session16 Introduction to Deep Learning and Image Processing.ipynb>)
 
 Explore deep learning fundamentals, CNN operations and architectures, apply image filters, and train and compare fully connected and convolutional MNIST classifiers.
 :::

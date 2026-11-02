@@ -35,7 +35,7 @@ website:
           - "Session12 Data for Machine Learning.ipynb"
           - "Session13-14 Machine Learning Essentials.ipynb"
           - "Session15 Machine Learning Evaluation.ipynb"
-          - "Session16 Introduction to Deep Learning and Image Processing 1.ipynb"
+          - "Session16 Introduction to Deep Learning and Image Processing.ipynb"
           - "Session16.1 MNIST Image Classification Practice.ipynb"
   page-footer:
     left: "Introduction to AI with Python course materials"
