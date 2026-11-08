@@ -1,12 +1,39 @@
 project:
   type: website
   output-dir: _site
-  render:
-    - "*.qmd"
-    - "Session*.ipynb"
-    - "practice/session16/*.ipynb"
   resources:
-    - "practice/session16/Practice MNIST Image Classification.ipynb"
+    - mindmap.html
+    - images/ai-with-python-banner.png
+    - images/ai-with-python-roadmap.png
+    - 09-Programming-for-Maqueen-Robot/practice/maqueen.py
+    - 09-Programming-for-Maqueen-Robot/practice/student_start_main.py
+    - 11-Introduction-to-AI/sample_data/ml_customer_data.csv
+    - 11-Introduction-to-AI/sample_data/ml_customer_data.xlsx
+    - 11-Introduction-to-AI/sample_data/ml_training.db
+    - 12-Data-for-Machine-Learning/sample_data/ml_customer_data.csv
+    - 12-Data-for-Machine-Learning/sample_data/ml_customer_data.xlsx
+    - 12-Data-for-Machine-Learning/sample_data/ml_training.db
+    - 13-14-Machine-Learning-Essentials/sample_data/california_housing.csv
+    - 13-14-Machine-Learning-Essentials/sample_data/celsius_fahrenheit_noisy.csv
+    - 13-14-Machine-Learning-Essentials/sample_data/mnist_train_small.csv
+    - 13-14-Machine-Learning-Essentials/sample_data/online_retail_ii_classroom.csv
+    - 15-Machine-Learning-Evaluation/sample_data/california_housing.csv
+    - 15-Machine-Learning-Evaluation/sample_data/mnist_train_small.csv
+    - 16-Deep-Learning-and-Image-Processing/sample_data/mnist_train_small.csv
+    - "16-Deep-Learning-and-Image-Processing/practice/Practice MNIST Image Classification.ipynb"
+  render:
+    - index.qmd
+    - "02-Python-Foundations-and-Algebra/Session2 Python Foundations and Algebra.ipynb"
+    - "03-Selection-and-Boolean-Logic/Session3 Selection and Boolean Logic.ipynb"
+    - "04-Iteration-Libraries-and-Functions/Session4 Iteration, Program Libraries and Functions.ipynb"
+    - "05-06-Function-and-Algorithm-Design/Session5-6 Function Design and Algorithm Design.ipynb"
+    - "07-08-Strings-and-Data-Structures/Session7-8 Strings and Data Structures.ipynb"
+    - "09-Programming-for-Maqueen-Robot/Session9 Programming for Maqueen Robot.ipynb"
+    - "11-Introduction-to-AI/Session11 Introduction to AI.ipynb"
+    - "12-Data-for-Machine-Learning/Session12 Data for Machine Learning.ipynb"
+    - "13-14-Machine-Learning-Essentials/Session13-14 Machine Learning Essentials.ipynb"
+    - "15-Machine-Learning-Evaluation/Session15 Machine Learning Evaluation.ipynb"
+    - "16-Deep-Learning-and-Image-Processing/Session16 Introduction to Deep Learning and Image Processing.ipynb"
 
 website:
   title: "Introduction to AI with Python"
@@ -19,24 +46,62 @@ website:
     left:
       - text: "Home"
         href: index.qmd
+      - text: "Mindmap"
+        href: mindmap.html
+      - text: "Session 2"
+        href: "02-Python-Foundations-and-Algebra/Session2 Python Foundations and Algebra.ipynb"
+      - text: "Session 3"
+        href: "03-Selection-and-Boolean-Logic/Session3 Selection and Boolean Logic.ipynb"
+      - text: "Session 4"
+        href: "04-Iteration-Libraries-and-Functions/Session4 Iteration, Program Libraries and Functions.ipynb"
+      - text: "Sessions 5–6"
+        href: "05-06-Function-and-Algorithm-Design/Session5-6 Function Design and Algorithm Design.ipynb"
+      - text: "Sessions 7–8"
+        href: "07-08-Strings-and-Data-Structures/Session7-8 Strings and Data Structures.ipynb"
+      - text: "Session 9"
+        href: "09-Programming-for-Maqueen-Robot/Session9 Programming for Maqueen Robot.ipynb"
+      - text: "Session 11"
+        href: "11-Introduction-to-AI/Session11 Introduction to AI.ipynb"
+      - text: "Session 12"
+        href: "12-Data-for-Machine-Learning/Session12 Data for Machine Learning.ipynb"
+      - text: "Sessions 13–14"
+        href: "13-14-Machine-Learning-Essentials/Session13-14 Machine Learning Essentials.ipynb"
+      - text: "Session 15"
+        href: "15-Machine-Learning-Evaluation/Session15 Machine Learning Evaluation.ipynb"
+      - text: "Session 16"
+        href: "16-Deep-Learning-and-Image-Processing/Session16 Introduction to Deep Learning and Image Processing.ipynb"
   sidebar:
     style: floating
     search: true
     contents:
-      - index.qmd
+      - text: "Home"
+        href: index.qmd
+      - text: "Course Mindmap"
+        href: mindmap.html
       - section: "Course Sessions"
         contents:
-          - "Session2 Python Foundations and Algebra.ipynb"
-          - "Session3 Selection and Boolean Logic.ipynb"
-          - "Session4 Iteration, Program Libraries and Functions.ipynb"
-          - "Session5-6 Function Design and Algorithm Design.ipynb"
-          - "Session7-8 Strings and Data Structures.ipynb"
-          - "Session9 Programming for Maqueen Robot.ipynb"
-          - "Session11 Introduction to AI.ipynb"
-          - "Session12 Data for Machine Learning.ipynb"
-          - "Session13-14 Machine Learning Essentials.ipynb"
-          - "Session15 Machine Learning Evaluation.ipynb"
-          - "Session16 Introduction to Deep Learning and Image Processing.ipynb"
+          - text: "Session 2: Python Foundations and Algebra"
+            href: "02-Python-Foundations-and-Algebra/Session2 Python Foundations and Algebra.ipynb"
+          - text: "Session 3: Selection and Boolean Logic"
+            href: "03-Selection-and-Boolean-Logic/Session3 Selection and Boolean Logic.ipynb"
+          - text: "Session 4: Iteration, Program Libraries and Functions"
+            href: "04-Iteration-Libraries-and-Functions/Session4 Iteration, Program Libraries and Functions.ipynb"
+          - text: "Sessions 5–6: Function Design and Algorithm Design"
+            href: "05-06-Function-and-Algorithm-Design/Session5-6 Function Design and Algorithm Design.ipynb"
+          - text: "Sessions 7–8: Strings and Data Structures"
+            href: "07-08-Strings-and-Data-Structures/Session7-8 Strings and Data Structures.ipynb"
+          - text: "Session 9: Programming for Maqueen Robot"
+            href: "09-Programming-for-Maqueen-Robot/Session9 Programming for Maqueen Robot.ipynb"
+          - text: "Session 11: Introduction to AI"
+            href: "11-Introduction-to-AI/Session11 Introduction to AI.ipynb"
+          - text: "Session 12: Data for Machine Learning"
+            href: "12-Data-for-Machine-Learning/Session12 Data for Machine Learning.ipynb"
+          - text: "Sessions 13–14: Machine Learning Essentials"
+            href: "13-14-Machine-Learning-Essentials/Session13-14 Machine Learning Essentials.ipynb"
+          - text: "Session 15: Machine Learning Evaluation"
+            href: "15-Machine-Learning-Evaluation/Session15 Machine Learning Evaluation.ipynb"
+          - text: "Session 16: Introduction to Deep Learning and Image Processing"
+            href: "16-Deep-Learning-and-Image-Processing/Session16 Introduction to Deep Learning and Image Processing.ipynb"
   page-footer:
     left: "Introduction to AI with Python course materials"
     right:
@@ -48,6 +113,13 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
+    toc-location: right
+    toc-title: "On this page"
+    toc-depth: 3
+    toc-expand: true
     code-copy: true
-    code-overflow: wrap
+    code-overflow: scroll
     smooth-scroll: true
+
+execute:
+  enabled: false

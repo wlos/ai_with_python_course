@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Introduction to AI with Python — Interactive Course Mindmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #ffffff;
+}
+.markmap {
+  width: 100vw;
+  height: 100vh;
+}
+.markmap > svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.nav-header {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid #d0d7de;
+  border-radius: 24px;
+  color: #1f2937;
+  text-decoration: none;
+  font-size: 13.5px;
+  font-weight: 600;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+}
+.nav-btn:hover {
+  background: #f3f4f6;
+  border-color: #0066cc;
+  color: #0066cc;
+  transform: translateY(-1px);
+}
+.toolbar-group {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid #d0d7de;
+  border-radius: 24px;
+  padding: 3px 6px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+.tool-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 11px;
+  background: transparent;
+  border: none;
+  border-radius: 18px;
+  color: #374151;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.tool-btn:hover {
+  background: #f3f4f6;
+  color: #0066cc;
+}
+.tool-btn:active {
+  background: #e5e7eb;
+}
+.tool-btn svg {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+}
+.tool-divider {
+  width: 1px;
+  height: 16px;
+  background: #e5e7eb;
+  margin: 0 3px;
+}
+.nav-title {
+  padding: 6px 14px;
+  background: rgba(243, 244, 246, 0.95);
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: #4b5563;
+}
+.markmap a {
+  color: #0066cc;
+  text-decoration: none;
+  transition: color 0.15s ease, text-decoration 0.15s ease;
+}
+.markmap a:hover {
+  color: #003d7a;
+  text-decoration: underline;
+}
+@media (max-width: 960px) {
+  .nav-title {
+    display: none;
+  }
+}
+@media (max-width: 680px) {
+  .tool-btn span {
+    display: none;
+  }
+  .tool-btn {
+    padding: 6px 8px;
+  }
+}
+</style>
+<script>
+window.markmap = window.markmap || {};
+let markmapInstance = null;
+
+let _markmap = undefined;
+Object.defineProperty(window.markmap, 'Markmap', {
+  configurable: true,
+  enumerable: true,
+  get() { return _markmap; },
+  set(originalClass) {
+    _markmap = originalClass;
+    const origCreate = originalClass.create;
+    _markmap.create = function(svg, opts, data) {
+      const mm = origCreate.call(originalClass, svg, opts, data);
+      markmapInstance = mm;
+      window.mm = mm;
+      return mm;
+    };
+  }
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
+</head>
+<body>
+<div class="nav-header">
+  <a href="index.html" class="nav-btn">← Back to Course</a>
+
+  <div class="toolbar-group">
+    <button id="btn-zoom-in" class="tool-btn" title="Zoom in">
+      <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>Zoom In</span>
+    </button>
+    <button id="btn-zoom-out" class="tool-btn" title="Zoom out">
+      <svg viewBox="0 0 24 24"><path d="M19 13H5v-2h14v2z"/></svg>
+      <span>Zoom Out</span>
+    </button>
+    <div class="tool-divider"></div>
+    <button id="btn-fit" class="tool-btn" title="Fit to screen (Recentre view)">
+      <svg viewBox="0 0 24 24"><path d="M5 5h5V3H3v7h2V5zm14-2h-7v2h5v5h2V3zm-2 16h-5v2h7v-7h-2v5zM5 14H3v7h7v-2H5v-5z"/></svg>
+      <span>Fit to Screen</span>
+    </button>
+    <div class="tool-divider"></div>
+    <button id="btn-expand" class="tool-btn" title="Expand all branches">
+      <svg viewBox="0 0 24 24"><path d="M12 5.83L15.17 9l1.41-1.41L12 3 7.41 7.59 8.83 9 12 5.83zm0 12.34L8.83 15l-1.41 1.41L12 21l4.59-4.59L15.17 15 12 18.17z"/></svg>
+      <span>Expand All</span>
+    </button>
+    <button id="btn-collapse" class="tool-btn" title="Collapse detailed branches">
+      <svg viewBox="0 0 24 24"><path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"/></svg>
+      <span>Collapse All</span>
+    </button>
+  </div>
+
+  <span class="nav-title">🗺️ Click links to open lecture sections in new tab · Pan & Zoom supported</span>
+</div>
+
+<div class="markmap">
+<script type="text/template">
+# [Introduction to AI with Python](index.html)
+
+## [02 Python Foundations & Algebra](02-Python-Foundations-and-Algebra/Session2%20Python%20Foundations%20and%20Algebra.html)
+- [1. Variables and Data Types](02-Python-Foundations-and-Algebra/Session2%20Python%20Foundations%20and%20Algebra.html#variables-and-data-types)
+  - Primitive types & type casting
+  - Memory size & naming conventions
+- [2. Number Representations](02-Python-Foundations-and-Algebra/Session2%20Python%20Foundations%20and%20Algebra.html#binary-decimal-and-hexadecimal-representation)
+  - Binary, Decimal & Hexadecimal
+  - Bit conversion functions
+- [3. Arithmetic Operators](02-Python-Foundations-and-Algebra/Session2%20Python%20Foundations%20and%20Algebra.html#arithmetic-operators)
+  - Operator precedence & expressions
+
+## [03 Selection and Boolean Logic](03-Selection-and-Boolean-Logic/Session3%20Selection%20and%20Boolean%20Logic.html)
+- [1. Boolean Values & Comparisons](03-Selection-and-Boolean-Logic/Session3%20Selection%20and%20Boolean%20Logic.html#boolean-values-and-comparisons)
+  - Comparison operators & evaluations
+- [2. Conditional Branching](03-Selection-and-Boolean-Logic/Session3%20Selection%20and%20Boolean%20Logic.html#multi-way-selection-with-if-elif-and-else)
+  - One-way, two-way and multi-way `if`/`elif`/`else`
+- [3. Logical & Bitwise Operators](03-Selection-and-Boolean-Logic/Session3%20Selection%20and%20Boolean%20Logic.html#logical-operators-and-or-and-not)
+  - Compound conditions & Truth Tables
+  - Bitwise operations (`&`, `|`, `^`, `~`, `<<`, `>>`)
+
+## [04 Iteration & Functions](04-Iteration-Libraries-and-Functions/Session4%20Iteration,%20Program%20Libraries%20and%20Functions.html)
+- [1. Loops: while and for](04-Iteration-Libraries-and-Functions/Session4%20Iteration,%20Program%20Libraries%20and%20Functions.html#sec-iteration)
+  - Loop patterns: counters, accumulators, searches
+  - Using `range()` control
+- [2. Python Standard Libraries](04-Iteration-Libraries-and-Functions/Session4%20Iteration,%20Program%20Libraries%20and%20Functions.html#sec-program-libraries)
+  - Importing modules (`math`, `random`, `time`)
+- [3. Function Design](04-Iteration-Libraries-and-Functions/Session4%20Iteration,%20Program%20Libraries%20and%20Functions.html#sec-functions)
+  - Reusable definitions & return values
+  - Parameters vs arguments
+
+## [05–06 Function & Algorithm Design](05-06-Function-and-Algorithm-Design/Session5-6%20Function%20Design%20and%20Algorithm%20Design.html)
+- [1. Better Function Design](05-06-Function-and-Algorithm-Design/Session5-6%20Function%20Design%20and%20Algorithm%20Design.html#sec-function-design)
+  - Docstrings, type hints & default parameters
+- [2. Algorithmic Thinking](05-06-Function-and-Algorithm-Design/Session5-6%20Function%20Design%20and%20Algorithm%20Design.html#sec-algorithms)
+  - Step sequences & logic decomposition
+- [3. Searching & Sorting](05-06-Function-and-Algorithm-Design/Session5-6%20Function%20Design%20and%20Algorithm%20Design.html#sec-searching)
+  - Linear search & binary search concepts
+  - Python built-in sorting (`sorted()`, `.sort()`)
+
+## [07–08 Strings & Data Structures](07-08-Strings-and-Data-Structures/Session7-8%20Strings%20and%20Data%20Structures.html)
+- [1. String Processing](07-08-Strings-and-Data-Structures/Session7-8%20Strings%20and%20Data%20Structures.html#strings)
+  - String manipulation & f-string formatting
+- [2. Core Collections](07-08-Strings-and-Data-Structures/Session7-8%20Strings%20and%20Data%20Structures.html#python-data-structures)
+  - Lists, Tuples, Sets, Dictionaries
+  - Mutability & lookup complexity
+- [3. Collection Conversion & Case Studies](07-08-Strings-and-Data-Structures/Session7-8%20Strings%20and%20Data%20Structures.html#converting-between-data-structures)
+  - Student analyser, micro:bit badge & quiz machine
+
+## [09 Programming for Maqueen Robot](09-Programming-for-Maqueen-Robot/Session9%20Programming%20for%20Maqueen%20Robot.html)
+- [1. Environment & Architecture](09-Programming-for-Maqueen-Robot/Session9%20Programming%20for%20Maqueen%20Robot.html#sec-environment)
+  - micro:bit Python editor & `maqueen.py` driver
+  - Hardware pinout & I2C communication
+- [2. Lighting & Motor Movement](09-Programming-for-Maqueen-Robot/Session9%20Programming%20for%20Maqueen%20Robot.html#sec-motors)
+  - Indicator LEDs & NeoPixel RGB animations
+  - Dual DC motors, steering & speed control
+- [3. Sensors & Autonomous Patrol](09-Programming-for-Maqueen-Robot/Session9%20Programming%20for%20Maqueen%20Robot.html#sec-ultrasonic)
+  - Ultrasonic obstacle avoidance state machine
+  - Infrared line patrol routines
+
+## [11 Introduction to AI](11-Introduction-to-AI/Session11%20Introduction%20to%20AI.html)
+- [1. AI, ML and DL Landscape](11-Introduction-to-AI/Session11%20Introduction%20to%20AI.html#what-are-artificial-intelligence-and-machine-learning)
+  - Definitions & concentric relationships
+- [2. History & Classic Schools](11-Introduction-to-AI/Session11%20Introduction%20to%20AI.html#a-short-history-of-ai)
+  - Symbolic AI, expert systems & connectionism
+- [3. ML Paradigms](11-Introduction-to-AI/Session11%20Introduction%20to%20AI.html#fundamentals-of-machine-learning)
+  - Supervised vs Unsupervised learning
+  - Regression vs Classification vs Clustering
+
+## [12 Data for Machine Learning](12-Data-for-Machine-Learning/Session12%20Data%20for%20Machine%20Learning.html)
+- [1. Data Categories & Attributes](12-Data-for-Machine-Learning/Session12%20Data%20for%20Machine%20Learning.html#data-categories)
+  - Structured vs Unstructured data
+  - Model parameters vs hyperparameters
+- [2. Pandas Data Preprocessing](12-Data-for-Machine-Learning/Session12%20Data%20for%20Machine%20Learning.html#data-preprocessing-in-pandas)
+  - Handling missing data & imputation
+  - Selecting, filtering & sorting records
+  - Multi-table merging & Matplotlib visualisations
+
+## [13–14 Machine Learning Essentials](13-14-Machine-Learning-Essentials/Session13-14%20Machine%20Learning%20Essentials.html)
+- [1. Algorithms & Models](13-14-Machine-Learning-Essentials/Session13-14%20Machine%20Learning%20Essentials.html#common-machine-learning-methods)
+  - Linear Regression & K-Nearest Neighbours
+  - Decision Trees, Random Forests & Boosting
+  - Multilayer Perceptron (MLP) & K-Means
+- [2. scikit-learn Workflows](13-14-Machine-Learning-Essentials/Session13-14%20Machine%20Learning%20Essentials.html#introduction-to-scikit-learn)
+  - Data pipelines, fit/predict paradigm
+  - California housing regression & customer clustering
+
+## [15 Machine Learning Evaluation](15-Machine-Learning-Evaluation/Session15%20Machine%20Learning%20Evaluation.html)
+- [1. Performance Metrics](15-Machine-Learning-Evaluation/Session15%20Machine%20Learning%20Evaluation.html#classification-evaluation-metrics)
+  - Confusion matrix, precision, recall & F1-score
+  - Regression MSE, RMSE, MAE & R²
+- [2. Generalisation & Validation](15-Machine-Learning-Evaluation/Session15%20Machine%20Learning%20Evaluation.html#underfitting-and-overfitting)
+  - Diagnosing overfitting vs underfitting
+  - K-fold cross-validation strategies
+
+## [16 Deep Learning & Image Processing](16-Deep-Learning-and-Image-Processing/Session16%20Introduction%20to%20Deep%20Learning%20and%20Image%20Processing.html)
+- [1. From ML to Deep Learning](16-Deep-Learning-and-Image-Processing/Session16%20Introduction%20to%20Deep%20Learning%20and%20Image%20Processing.html#from-machine-learning-to-deep-learning)
+  - Hierarchical feature representations
+  - Pioneers & historical breakthroughs
+- [2. CNN Building Blocks](16-Deep-Learning-and-Image-Processing/Session16%20Introduction%20to%20Deep%20Learning%20and%20Image%20Processing.html#cnn-building-blocks)
+  - Convolutions, filters, padding & stride
+  - Activation functions & pooling mechanisms
+- [3. Evolution of Architectures](16-Deep-Learning-and-Image-Processing/Session16%20Introduction%20to%20Deep%20Learning%20and%20Image%20Processing.html#popular-architectures)
+  - LeNet-5, AlexNet, VGG & ResNet
+  - Image classification hands-on with MNIST
+</script>
+</div>
+
+<script>
+// Open mindmap content links in a new tab; resolve to online GitHub Pages if running from file://
+document.addEventListener('click', function(e) {
+  const link = e.target.closest('a');
+  if (!link || !link.getAttribute('href') || link.classList.contains('nav-btn')) return;
+
+  let href = link.getAttribute('href');
+  
+  if (window.location.protocol === 'file:' && !href.startsWith('http://') && !href.startsWith('https://')) {
+    href = 'https://wlos.github.io/ai_with_python_course/' + href.replace(/^\.\//, '');
+    link.setAttribute('href', href);
+  }
+
+  link.setAttribute('target', '_blank');
+  link.setAttribute('rel', 'noopener noreferrer');
+});
+
+// Recursive fold state manager for Markmap
+function setNodeFold(node, fold, depth) {
+  if (depth === undefined) depth = 0;
+  if (depth >= 1) {
+    node.payload = Object.assign({}, node.payload, { fold: fold ? 1 : 0 });
+  } else {
+    node.payload = Object.assign({}, node.payload, { fold: 0 });
+  }
+  if (node.children && node.children.length > 0) {
+    node.children.forEach(function(child) {
+      setNodeFold(child, fold, depth + 1);
+    });
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const btnZoomIn = document.getElementById('btn-zoom-in');
+  const btnZoomOut = document.getElementById('btn-zoom-out');
+  const btnFit = document.getElementById('btn-fit');
+  const btnExpand = document.getElementById('btn-expand');
+  const btnCollapse = document.getElementById('btn-collapse');
+
+  if (btnZoomIn) {
+    btnZoomIn.addEventListener('click', function() {
+      if (markmapInstance) markmapInstance.rescale(1.25);
+    });
+  }
+
+  if (btnZoomOut) {
+    btnZoomOut.addEventListener('click', function() {
+      if (markmapInstance) markmapInstance.rescale(0.8);
+    });
+  }
+
+  if (btnFit) {
+    btnFit.addEventListener('click', function() {
+      if (markmapInstance) markmapInstance.fit();
+    });
+  }
+
+  if (btnExpand) {
+    btnExpand.addEventListener('click', async function() {
+      if (markmapInstance && markmapInstance.state && markmapInstance.state.data) {
+        setNodeFold(markmapInstance.state.data, false, 0);
+        await markmapInstance.renderData();
+        markmapInstance.fit();
+      }
+    });
+  }
+
+  if (btnCollapse) {
+    btnCollapse.addEventListener('click', async function() {
+      if (markmapInstance && markmapInstance.state && markmapInstance.state.data) {
+        setNodeFold(markmapInstance.state.data, true, 0);
+        await markmapInstance.renderData();
+        markmapInstance.fit();
+      }
+    });
+  }
+});
+</script>
+</body>
+</html>
