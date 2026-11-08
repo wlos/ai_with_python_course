@@ -17,7 +17,7 @@
 Welcome to the **Introduction to AI with Python** curriculum. This course introduces learners to the complete journey from computational thinking and Python programming fundamentals to physical computing with the BBC micro:bit & Maqueen robot, tabular data analysis with Pandas, and classical machine learning and deep learning computer vision.
 
 - 🌐 **Course Website**: <https://wlos.github.io/ai_with_python_course/>
-- 🗺️ **Interactive Roadmap**: [Mindmap of the Course](mindmap.html) · [Online Mindmap](https://wlos.github.io/ai_with_python_course/mindmap.html)
+- 🗺️ **Interactive Roadmap**: [Mindmap of the Course](https://wlos.github.io/ai_with_python_course/mindmap.html)
 
 ## 🛠️ What You'll Build
 
