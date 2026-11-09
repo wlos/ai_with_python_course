@@ -95,7 +95,7 @@ Confusion Matrix · Precision, Recall & F1-score · Mean Squared Error & R² · 
 #### 👁️ [Session 16: Introduction to Deep Learning and Image Processing](<16-Deep-Learning-and-Image-Processing/Session16 Introduction to Deep Learning and Image Processing.ipynb>)
 [Neural Networks & Computer Vision]{.focus-badge}
 
-Deep Learning Architectures · Convolutions, Kernels & Feature Maps · Pooling & Non-linearities · AlexNet, VGG & ResNet Evolution · MNIST Digit Classification
+Deep Learning Architectures · Convolutions & Pooling · Image Transforms & Batches · CNN Training with PyTorch · ResNet18 Transfer Learning · MNIST Digit Classification
 :::
 :::
 

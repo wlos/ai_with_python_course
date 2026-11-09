@@ -64,7 +64,7 @@ The course is organised into modular sessions located directly under the reposit
 | 📊 [12](12-Data-for-Machine-Learning) | [Data for Machine Learning](12-Data-for-Machine-Learning) | Data Wrangling with Pandas | Structured vs Unstructured · Missing Values · Filtering & Grouping · Merge & Join · Matplotlib Plots |
 | 🔬 [13–14](13-14-Machine-Learning-Essentials) | [Machine Learning Essentials](13-14-Machine-Learning-Essentials) | Classical ML Workflows | Linear Regression · KNN · Decision Trees · Random Forests · Boosting · scikit-learn Pipelines |
 | 📐 [15](15-Machine-Learning-Evaluation) | [Machine Learning Evaluation](15-Machine-Learning-Evaluation) | Validation & Metrics | Confusion Matrix · Precision, Recall & F1 · MSE & R² · Overfitting vs Underfitting · Cross-Validation |
-| 👁️ [16](16-Deep-Learning-and-Image-Processing) | [Introduction to Deep Learning](16-Deep-Learning-and-Image-Processing) | Neural Networks & Vision | Deep Representations · Convolutions & Pooling · CNN Architectures (AlexNet, ResNet) · MNIST Classifier |
+| 👁️ [16](16-Deep-Learning-and-Image-Processing) | [Introduction to Deep Learning](16-Deep-Learning-and-Image-Processing) | Neural Networks & Vision | Convolutions & Pooling · CNN Architectures · Image Transforms & Batches · CNN Training with PyTorch · ResNet18 Transfer Learning · MNIST Classifier |
 
 ## 🚀 Getting Started
 

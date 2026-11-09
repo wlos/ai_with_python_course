@@ -20,6 +20,9 @@ project:
     - 15-Machine-Learning-Evaluation/sample_data/california_housing.csv
     - 15-Machine-Learning-Evaluation/sample_data/mnist_train_small.csv
     - 16-Deep-Learning-and-Image-Processing/sample_data/mnist_train_small.csv
+    - 16-Deep-Learning-and-Image-Processing/sample_data/digit_images.zip
+    - "16-Deep-Learning-and-Image-Processing/practice/Practice CNN Training with PyTorch.ipynb"
+    - "16-Deep-Learning-and-Image-Processing/practice/Practice Transfer Learning with ResNet18.ipynb"
     - "16-Deep-Learning-and-Image-Processing/practice/Practice MNIST Image Classification.ipynb"
   render:
     - index.qmd
